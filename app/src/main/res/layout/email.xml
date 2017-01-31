@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -98,7 +100,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:gravity="bottom"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp">
 
         <Button
             android:text="DISMISS"
@@ -106,7 +109,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/dismiss"
             android:layout_weight="1"
-            android:background="@android:color/holo_red_dark" />
+            android:background="?attr/colorButtonNormal"
+            android:elevation="24dp"
+            android:layout_marginRight="3dp" />
 
         <Button
             android:text="SEND"
@@ -114,6 +119,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/send"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light" />
+            android:background="?attr/colorButtonNormal"
+            android:elevation="24dp"
+            android:layout_marginLeft="3dp" />
     </LinearLayout>
 </LinearLayout>

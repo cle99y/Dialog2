@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -24,15 +25,16 @@ public class DialogActivity extends AppCompatActivity {
 
         View bang = (Button) findViewById((R.id.bang));
 
-
         bang.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 final Dialog dialog = new Dialog(c);
-
-                dialog.setContentView(R.layout.email);
+                dialog.requestWindowFeature(Window.FEATURE_LEFT_ICON);
                 dialog.setTitle("Review Email...");
+                dialog.setContentView(R.layout.email);
+                dialog.setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,R.drawable.icon);
+
                 TextView e = (TextView) dialog.findViewById(R.id.address);
                 e.setText("oc70@aircadets.org, adj70@aircadets.org, someone@email.com");
                 TextView s = (TextView) dialog.findViewById((R.id.subject_line));
