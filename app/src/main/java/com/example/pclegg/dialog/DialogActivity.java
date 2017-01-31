@@ -12,7 +12,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class DialogActivity extends AppCompatActivity {
-
+// basic template for creating a custom dialog
+// uses a static template here but will be adapted for use in 
+// an app that sets content    
 
 
 
